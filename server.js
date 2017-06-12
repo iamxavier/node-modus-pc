@@ -26,11 +26,11 @@ app.use((req, res, next)=>{
 })
 
 
-app.use((req,res,next)=>{
-    res.render('maintenance.hbs', {
-        pageTitle: 'Site under Maintenance.',
-    })
-})
+// app.use((req,res,next)=>{
+//     res.render('maintenance.hbs', {
+//         pageTitle: 'Site under Maintenance.',
+//     })
+// })
 
 app.get('/', (req, res)=>{
      res.render('home.hbs', {
