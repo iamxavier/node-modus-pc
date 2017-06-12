@@ -40,6 +40,13 @@ app.get('/', (req, res)=>{
     })
 });
 
+app.get('/projects', (req,res)=>{
+    res.render('project.hbs', {
+        pageTitle: 'This is a projects page',
+        welcomeMessage: 'This is where github projects will be displayed'
+    })
+})
+
 app.get('/about', (req,res)=>{
     res.render('about.hbs', {
         pageTitle: 'About Page'
